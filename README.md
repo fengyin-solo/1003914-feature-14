@@ -68,4 +68,8 @@ npm run build
 - 字段、状态、动作与流转目标集中在 `frontend/src/data/modules.ts`；示例数据在
   `frontend/src/data/seed.ts`。
 - 状态流转只允许在 `local-service.ts` 里改，页面组件不做业务判断。
+- 应急演练的断点续做（筹备清单、签到、撤离确认、总结分段保存与复盘待办）在
+  `frontend/src/api/drill-service.ts`，草稿持久化在 localStorage 的
+  `geohazard-monitor-prevention:drill-drafts`；签到冲突以现场签到为准，
+  总结提交即归档，归档后重复恢复/提交都不会覆盖。
 - 想回到初始数据：清掉浏览器里 `geohazard-monitor-prevention:entries` 这一项，或调用 `resetModule(模块)`。

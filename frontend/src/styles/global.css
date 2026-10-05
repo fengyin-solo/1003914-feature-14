@@ -35,3 +35,34 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+/* 应急演练断点续做工作台 */
+.workspace { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+.workspace-head { display: flex; justify-content: space-between; align-items: center; }
+.workspace-head h3 { margin: 0; font-size: 15px; }
+.step-bar { display: flex; gap: 8px; list-style: none; padding: 0; margin: 10px 0; }
+.step-item { flex: 1; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12px; color: var(--muted); }
+.step-item.done { border-color: #12b76a; color: #12b76a; }
+.step-item.current { border-color: var(--brand); color: var(--brand); font-weight: 600; }
+.step-name { display: block; }
+.step-time { display: block; font-size: 11px; font-weight: 400; }
+.resume-hint { font-size: 12px; color: var(--muted); margin: 4px 0 10px; }
+.stage { border-top: 1px dashed var(--border); padding: 10px 0; }
+.stage h4 { margin: 0 0 8px; font-size: 14px; }
+.check-item { display: block; margin: 4px 0; font-size: 13px; }
+.field-label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.stage textarea { width: 100%; min-height: 72px; margin: 2px 0 8px; }
+.stage input { margin-bottom: 8px; }
+.stage .btn { margin-right: 8px; }
+.stage-locked { color: var(--muted); font-size: 12px; }
+.readonly-list { margin: 0; padding-left: 18px; font-size: 13px; }
+.hint { font-size: 12px; color: var(--muted); }
+.name-tag { display: inline-block; background: #eef2f7; border-radius: 999px; padding: 2px 10px; margin: 2px 4px 2px 0; font-size: 12px; }
+.summary-content { white-space: pre-wrap; font-size: 13px; }
+.draft-badge { margin-left: 6px; background: #fef0c7; color: #b54708; border-radius: 999px; padding: 1px 8px; font-size: 11px; }
+.todo-panel { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+.todo-panel h3 { margin: 0; font-size: 15px; }
+.todo-panel ul { list-style: none; padding: 0; margin: 8px 0 0; }
+.todo-panel li { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; font-size: 13px; }
+.todo-panel li.done label { text-decoration: line-through; color: var(--muted); }
+.todo-time { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.notice-text { color: #12b76a; }
