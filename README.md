@@ -14,7 +14,8 @@
 ├── frontend/                 Vue 3 + Vite + TypeScript 前端（唯一运行单元）
 │   ├── src/views/            每个业务模块一个页面
 │   ├── src/api/local-service.ts   本地数据服务：列表、筛选、动作流转、导出
-│   ├── src/data/             模块元数据 / 示例数据 / localStorage 持久化
+│   ├── src/api/drill-flow.ts      应急演练断点续做：分段保存、恢复定位、总结提交与复盘待办
+│   ├── src/data/             模块元数据 / 示例数据 / 演练草稿 / localStorage 持久化
 │   ├── src/stores/           会话与筛选状态
 │   └── vite.config.ts        dev server 配置（open: false，无 /api 代理）
 ├── .gitignore
@@ -68,4 +69,7 @@ npm run build
 - 字段、状态、动作与流转目标集中在 `frontend/src/data/modules.ts`；示例数据在
   `frontend/src/data/seed.ts`。
 - 状态流转只允许在 `local-service.ts` 里改，页面组件不做业务判断。
+- 应急演练的断点续做草稿与复盘待办存在 `geohazard-monitor-prevention:drill-drafts`、
+  `geohazard-monitor-prevention:drill-review-todos` 两项里，读写统一走 `api/drill-flow.ts`；
+  现场签到与人工补录冲突时以现场签到为准，已归档总结只读、不可被恢复覆盖。
 - 想回到初始数据：清掉浏览器里 `geohazard-monitor-prevention:entries` 这一项，或调用 `resetModule(模块)`。

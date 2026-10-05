@@ -35,3 +35,28 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.drill-flow { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+.flow-head { display: flex; justify-content: space-between; align-items: center; }
+.flow-head h3 { margin: 0; font-size: 15px; }
+.flow-resume { color: var(--muted); font-size: 12px; margin: 6px 0; }
+.flow-notice { color: #975a16; background: #fffbeb; border: 1px solid #fbd38d; border-radius: 6px; padding: 6px 10px; font-size: 12px; }
+.stage-bar { display: flex; gap: 8px; list-style: none; padding: 0; margin: 10px 0; }
+.stage-btn { border: 1px solid var(--border); background: #fff; border-radius: 999px; padding: 4px 14px; cursor: pointer; font-size: 13px; }
+.stage-btn.done { border-color: #2f855a; color: #2f855a; }
+.stage-btn.current { background: var(--brand); border-color: var(--brand); color: #fff; }
+.stage-panel { border-top: 1px dashed var(--border); padding-top: 10px; }
+.check-item { display: flex; gap: 8px; align-items: center; padding: 4px 0; font-size: 13px; }
+.signin-grid { display: flex; gap: 24px; }
+.signin-grid > div { flex: 1; }
+.signin-grid h4 { margin: 0 0 6px; font-size: 13px; }
+.add-row { display: flex; gap: 6px; margin-bottom: 6px; }
+.name-list { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.name-list li { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px dashed var(--border); }
+.name-list .empty-line { color: var(--muted); border-bottom: none; }
+.stage-actions { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+.stage-panel textarea { width: 100%; }
+.summary-eval { display: block; margin-top: 8px; width: 100%; }
+.flow-message { font-size: 12px; color: var(--brand); }
+.conflict-text { color: #b42318; font-size: 12px; margin: 6px 0; }
+.review-todos { margin-top: 16px; }
+.review-todos h3 { font-size: 15px; margin: 0 0 8px; }
